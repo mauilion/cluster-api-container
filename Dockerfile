@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 ADD https://storage.googleapis.com/kubernetes-release/release/v1.12.1/bin/linux/amd64/kubectl /usr/local/bin/kubectl
-RUN apt update && apt install -y make git openssl openssh-client bash curl ca-certificates
+RUN apt update && apt install -y vim vim-gocomplete make git openssl openssh-client bash curl ca-certificates
 ENV GIMME_OS=linux GIMME_ARCH=amd64
 ENV GIMME_GO_VERSION=1.11.1
 ENV GOROOT=/root/.gimme/versions/go1.11.1.linux.amd64
